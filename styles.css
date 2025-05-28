@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  height: 800vh; /* Slower scroll speed */
+}
+#progressContainer { position: fixed; top: 0; left: 0; width: 100%; height: 5px; background: #444; z-index: 100; }
+#progressBar { width: 0; height: 100%; background: #fff; transition: width 0.1s ease; }
+#viewport { position: fixed; top: 50px; left: 0; right: 0; bottom: 50px; overflow: hidden; }
+.obj { position: absolute; transform-origin: center center; transition: transform 0.2s, opacity 0.2s; pointer-events: none; }
+#scaleIndicator { position: fixed; bottom: 10px; left: 0; right: 0; font-size: 1.2rem; }
